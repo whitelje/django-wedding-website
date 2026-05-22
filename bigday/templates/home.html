@@ -27,7 +27,7 @@
                         <a class="page-scroll" href="#event">Event</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Niagara-on-the-Lake</a>
+                        <a class="page-scroll" href="#chicago">Chicago</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#other-stuff">Everything Else</a>
@@ -45,14 +45,8 @@
     <header id="main-header">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>We did it!!</h1>
-                {% comment %}
+                <h1>Oh, Dang!</h1>
                 <hr>
-                <h2>It's wedding week!</h2>
-                <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
-                <a href="#event" class="btn btn-primary btn-xl page-scroll">Friday</a>
-                <a href="#saturday-event" class="btn btn-success btn-xl page-scroll">Saturday</a>
-                {% endcomment %}
             </div>
         </div>
     </header>
@@ -63,21 +57,22 @@
                     <h2 class="section-heading">Welcome!</h2>
                     <hr>
                     <p>
-                        Hello friends and family! It's the week of the wedding!
+                        Hello friends and family! Thanks for scanning the QR code!
                     </p>
                     <p>
-                        If you're looking for information about the event, look no further!
-                        Please see below for all the details regarding <a href="#event" class="page-scroll">Friday night's welcome party</a> and <a href="#saturday-event" class="page-scroll">Saturday's event</a>.
+                        The link for the group <a href="#chicago" class="page-scroll">hotel block</a> is below. Please start thinking about your accommodations soon.
+                        You'll also see tentative details regarding <a href="#event" class="page-scroll">Friday night's welcome party</a> and <a href="#saturday-event" class="page-scroll">Saturday's event</a> below.
                     </p>
+                    {% comment %}
                     <p>
-                        To get added to the wedding whatsapp group first create an account and then send an
+                        To get added to the wedding Signal group, first create an account and then send an
                         email to <a href="mailto:{{ support_email }}">{{ support_email }}</a>.
-                        Also, the current front-runner for the wedding hashtag (if you're into that sort of thing) is #getlukky.
                     </p>
+                    {% endcomment %}
                     <p>
-                        Looking forward to seeing everyone soon!
+                        Looking forward to seeing everyone in October!
                     </p>
-                    <p class="pull-right">- Cory and Rowena</p>
+                    <p class="pull-right">- Miranda and Jake</p>
                 </div>
             </div>
         </div>
@@ -87,7 +82,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#event" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/ravine-nav.jpg' %}" class="img-responsive" alt="">
+                        <img src="{% static 'bigday/images/lytle-house.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -98,12 +93,12 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#niagara" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/prince-of-wales-hotel-nav.jpg' %}" class="img-responsive" alt="">
+                    <a href="#chicago" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/bean.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Niagara-on-the-Lake
+                                    Chicago
                                 </div>
                             </div>
                         </div>
@@ -111,7 +106,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#story" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/twelve-apostles-nav.jpg' %}" class="img-responsive" alt="">
+                        <img src="{% static 'bigday/images/us.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -125,12 +120,11 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
-    <section id="niagara">
-        {% include 'partials/niagara.html' %}
+    <section id="chicago">
+        {% include 'partials/chicago.html' %}
     </section>
 {% comment %}
         {% include 'partials/wedding-party.html' %}
-{% endcomment %}
     <section id="other-stuff" class="bg-primary">
         {% include 'partials/misc.html' %}
     </section>
@@ -142,6 +136,7 @@
     </section>
     {% include 'partials/proposal.html' %}
     {% include 'partials/save-the-dates.html' %}
+{% endcomment %}
     <section id="contact" class="bg-dark">
         <div class="container">
             <div class="row">

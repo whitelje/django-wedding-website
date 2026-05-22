@@ -2,3 +2,4 @@ django
 Fabric
 psycopg2-binary
 django-environ
+django-distill

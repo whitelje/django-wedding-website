@@ -103,13 +103,17 @@
 <section class="no-padding" id="navigation">
     <div class="container-fluid">
         <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-6 col-sm-6">
                 <a href="#event" class="portfolio-box page-scroll">
+<picture>
+                    <source type="image/webp" srcset="{% static 'bigday/images/lytle-house.webp' %}">
+                    <source type="image/jpeg" srcset="{% static 'bigday/images/lytle-house.jpg' %}">
                     <img
                         src="{% static 'bigday/images/lytle-house.jpg' %}"
                         class="img-responsive"
-                        alt=""
+                        alt="The Lytle House"
                     />
+</picture>
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-name">The Event</div>
@@ -117,13 +121,17 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-6 col-sm-6">
                 <a href="#chicago" class="portfolio-box page-scroll">
+<picture>
+                    <source type="image/webp" srcset="{% static 'bigday/images/bean.webp' %}">
+                    <source type="image/jpeg" srcset="{% static 'bigday/images/bean.jpg' %}">
                     <img
                         src="{% static 'bigday/images/bean.jpg' %}"
                         class="img-responsive"
                         alt=""
                     />
+</picture>
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-name">Chicago</div>
@@ -131,6 +139,7 @@
                     </div>
                 </a>
             </div>
+{% comment %}
             <div class="col-lg-4 col-sm-6">
                 <a href="#story" class="portfolio-box page-scroll">
                     <img
@@ -145,6 +154,7 @@
                     </div>
                 </a>
             </div>
+{% endcomment %}
         </div>
     </div>
 </section>
